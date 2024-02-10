@@ -9,12 +9,9 @@ class App extends React.Component {
     }
   }
   setValue(){
-    this.setState(
-      {
-        name : "Jilda"
-      }
-    );
-    window.alert(this.state.name);
+    this.setState
+     ({ name: 'Jilda' },() => {
+    window.alert(this.state.name)});
   }
   
   render(){
